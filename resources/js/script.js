@@ -77,4 +77,21 @@ $('.js--nav-icon').click(function() {
   }
 });
 
+/* Maps */
+var map = new GMaps({
+  div: '.map',
+  lat: 42.361145,
+  lng: -71.05,
+  zoom: 12
+});
+
+map.addMarker({
+  lat: 42.361145,
+  lng: -71.057083,
+  title: 'Boston',
+  infoWindow: {
+  content: '<p>Our Boston Headquarters</p>'
+}
+});
+
 });
